@@ -12,12 +12,13 @@ This enables the user to participate in Mumble conference using SIP client or pe
 * *pjsua2* from Pjproject SIP stack
 * CMake
 * *mumlib* - https://github.com/slomkowski/mumlib
-* 
+
 ### (On Gentoo...)
 ```
 sudo -i
 echo net-libs/pjproject >> /etc/portage/package.accept_keywords/pjproject
-echo net-libs/pjproject g711 g722 g7221 gsm opus speex webrtc >> /etc/portage/package.use/pjproject
+echo net-libs/pjproject alsa amr ffmpeg g722 g7221 gsm ilbc ipv6 l16 libyuv openh264 opus resample sdl silk speex ssl webrtc
+ >> /etc/portage/package.use/pjproject
 emerge log4cpp opus protobuf net-libs/pjproject
 ```
 
